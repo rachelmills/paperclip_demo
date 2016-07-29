@@ -20,6 +20,10 @@ group :development, :test do
   gem "rspec-rails"
 end
 
+group :production, :staging do
+  gem 'rails_12factor'
+end
+
 group :test do
   gem "capybara"
   gem "shoulda-matchers", ">= 3.0.0", require: false
